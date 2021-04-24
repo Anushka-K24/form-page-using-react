@@ -6,7 +6,7 @@ const HowItWorks = () => {
     <>
       <div className="howItWorks">
         <div className="first-div">
-          <h1>How it Works </h1>
+          <h1>How it Works !!</h1>
           <div className="second-div">
             <span class="dot">
               <img
