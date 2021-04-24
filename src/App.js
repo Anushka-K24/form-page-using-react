@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./index.css";
 import FooterSection from "./Navbar/footer";
 import HowItWorks from "./Navbar/how_it_works";
-import Navbar from "./Navbar/Navbar";
+// import Navbar from "./Navbar/Navbar";
 
 export default function App() {
   // decalring statesand hooks
@@ -16,7 +16,7 @@ export default function App() {
 
   const [submit, setSubmit] = useState(false);
 
-  const [valid, setValid] = useState(false)
+  // const [valid, setValid] = useState(false)
 
   // declaring fucntions for onChange or event handlers
 
@@ -57,7 +57,7 @@ export default function App() {
       <div class="form-container">
         <h2>Register for Covid-19 Vaccine</h2>
         <form class="register-form" onSubmit={handleSubmit}>
-          {submit && !valid ? (
+          {submit ? (
             <div class="success-message">
               Success! Thank you for registering
             </div>
